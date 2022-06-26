@@ -1,0 +1,99 @@
+/* Flex */
+
+@mixin d-flex {
+    display: flex;
+}
+
+@mixin flex-row {
+    flex-direction: row;
+}
+
+@mixin flex-column {
+    flex-direction: column;
+}
+
+@mixin justify-content-center {
+    justify-content: center;
+}
+
+@mixin align-items-center {
+    align-items: center;
+}
+
+@mixin flex-fill {
+    flex: 1 1 auto;
+}
+
+/* padding */
+
+@mixin p-10 {
+    padding: 10px;
+}
+
+@mixin p-20 {
+    padding: 20px;
+}
+
+@mixin px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@mixin p-30 {
+    padding: 30px;
+}
+
+/* margin */
+
+@mixin m-10 {
+    margin: 10px;
+}
+
+@mixin mb-5 {
+    margin-bottom: 5px;
+}
+
+@mixin mb-10 {
+    margin-bottom: 10px;
+}
+
+@mixin mb-20 {
+    margin-bottom: 20px;
+}
+
+@mixin m-20 {
+    margin: 20px;
+}
+
+@mixin m-30 {
+    margin: 30px;
+}
+
+@mixin mr-10 {
+    margin-right: 10px;
+}
+
+@mixin mr-20 {
+    margin-right: 20px;
+}
+
+@mixin ml-10 {
+    margin-left: 10px;
+}
+
+@mixin mt-5 {
+    margin-top: 5px;
+}
+
+
+// font
+
+@mixin font {
+    font-family: 'Rubik', sans-serif;
+}
+
+// cart
+
+@mixin cart-titles {
+    font-size: 18px;
+}
