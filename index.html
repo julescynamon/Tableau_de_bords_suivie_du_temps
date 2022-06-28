@@ -10,71 +10,142 @@
 
 	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 	<style>
-		.attribution { font-size: 11px; text-align: center; }
+		.attribution { font-size: 11px; text-align: center; color: #f1f1f1; }
 		.attribution a { color: hsl(228, 45%, 44%); }
 	</style>
 </head>
 <body>
 
-	Report for
-	Jeremy Robson
+	<main class="container">
 
-	Daily
-	Weekly
-	Monthly
+		<div class="div1 cart1">
+			<div class="cart1__header">
+				<img class="cart1__img" src="./images/image-jeremy.png" alt="profil image">
+				<span class="cart1__report" >Report for</span>
+				<span class="cart1__name">Jeremy <br> Robson</span>
+			</div>
+			<div class="cart1__choice">
+				<button class="cart1__choice--1 timeframes" id="daily">Daily</button>
+				<button class="cart1__choice--2 timeframes active " id="weekly">Weekly</button>
+				<button class="cart1__choice--3 timeframes" id="monthly">Monthly</button>
+			</div>
+		</div>
 
-	Work
-	5hrs <!-- daily -->
-	Previous - 7hrs <!-- daily -->
-	32hrs <!-- weekly -->
-	Previous - 36hrs <!-- weekly -->
-	103hrs <!-- monthly -->
-	Previous - 128hrs <!-- monthly -->
+		<div id="work" class="div2 cartTime ">
+			<div class="cartTime__header cartTime__header--1">
+				<img src="./images/icon-work.svg" alt="">
+			</div>
+			<div class="cartTime__content">
+				<div class="cartTime__content__header">
+					<span class="cartTime__content__header--title" >Work</span>
+					<span class="cartTime__content__header--star">
+						<img src="./images/icon-ellipsis.svg" alt="">
+					</span>
+				</div>
+				<div class="cartTime__content__main">
+					<span class="cartTime__content__main--time " id="workHours"></span>
+					<span class="cartTime__content__main--date " id="workPrevHours"></span>
+				</div>
+			</div>
+		</div>
 
-	Play
-	1hr <!-- daily -->
-	Previous - 2hrs <!-- daily -->
-	10hrs <!-- weekly -->
-	Previous - 8hrs <!-- weekly -->
-	23hrs <!-- monthly -->
-	Previous - 29hrs <!-- monthly -->
+		<div id="play" class="div3 cartTime ">
+			<div class="cartTime__header cartTime__header--2">
+				<img src="./images/icon-play.svg" alt="">
+			</div>
+			<div class="cartTime__content">
+				<div class="cartTime__content__header">
+					<span class="cartTime__content__header--title" >Play</span>
+					<span class="cartTime__content__header--star">
+						<img src="./images/icon-ellipsis.svg" alt="">
+					</span>
+				</div>
+				<div class="cartTime__content__main">
+					<span class="cartTime__content__main--time " id="playHours"></span>
+					<span class="cartTime__content__main--date " id="playPrevHours"></span>
+				</div>
+			</div>
+		</div>
 
-	Study
-	0hrs <!-- daily -->
-	Previous - 1hr <!-- daily -->
-	4hrs <!-- weekly -->
-	Previous - 7hrs <!-- weekly -->
-	13hrs <!-- monthly -->
-	Previous - 19hrs <!-- monthly -->
+		<div id="study" class="div4 cartTime ">
+			<div class="cartTime__header cartTime__header--3">
+				<img src="./images/icon-study.svg" alt="">
+			</div>
+			<div class="cartTime__content">
+				<div class="cartTime__content__header">
+					<span class="cartTime__content__header--title" >Study</span>
+					<span class="cartTime__content__header--star">
+						<img src="./images/icon-ellipsis.svg" alt="">
+					</span>
+				</div>
+				<div class="cartTime__content__main">
+					<span class="cartTime__content__main--time " id="studyHours"></span>
+					<span class="cartTime__content__main--date " id="studyPrevHours"></span>
+				</div>
+			</div>
+		</div>
 
-	Exercise
-	1hr <!-- daily -->
-	Previous - 1hr <!-- daily -->
-	4hrs <!-- weekly -->
-	Previous - 5hrs <!-- weekly -->
-	11hrs <!-- monthly -->
-	Previous - 18hrs <!-- monthly -->
+		<div id="exercice" class="div5 cartTime ">
+			<div class="cartTime__header cartTime__header--4">
+				<img src="./images/icon-exercise.svg" alt="">
+			</div>
+			<div class="cartTime__content">
+				<div class="cartTime__content__header">
+					<span class="cartTime__content__header--title" >Exercice</span>
+					<span class="cartTime__content__header--star">
+						<img src="./images/icon-ellipsis.svg" alt="">
+					</span>
+				</div>
+				<div class="cartTime__content__main">
+					<span class="cartTime__content__main--time " id="exerciceHours"></span>
+					<span class="cartTime__content__main--date " id="exercicePrevHours"></span>
+				</div>
+			</div>
+		</div>
 
-	Social
-	1hr <!-- daily -->
-	Previous - 3hrs <!-- daily -->
-	5hrs <!-- weekly -->
-	Previous - 10hrs <!-- weekly -->
-	21hrs <!-- monthly -->
-	Previous - 23hrs <!-- monthly -->
+		<div id="socials" class="div6 cartTime ">
+			<div class="cartTime__header cartTime__header--5">
+				<img src="./images/icon-social.svg" alt="">
+			</div>
+			<div class="cartTime__content">
+				<div class="cartTime__content__header">
+					<span class="cartTime__content__header--title" >Socials</span>
+					<span class="cartTime__content__header--star">
+						<img src="./images/icon-ellipsis.svg" alt="">
+					</span>
+				</div>
+				<div class="cartTime__content__main">
+					<span class="cartTime__content__main--time " id="socialsHours"></span>
+					<span class="cartTime__content__main--date " id="socialsPrevHours"></span>
+				</div>
+			</div>
+		</div>
 
-	Self Care
-	0hrs <!-- daily -->
-	Previous - 1hr <!-- daily -->
-	2hrs <!-- weekly -->
-	Previous - 2hrs <!-- weekly -->
-	7hrs <!-- monthly -->
-	Previous - 11hrs <!-- monthly -->
+		<div id="self-care" class="div7 cartTime ">
+			<div class="cartTime__header cartTime__header--6">
+				<img src="./images/icon-self-care.svg" alt="">
+			</div>
+			<div class="cartTime__content">
+				<div class="cartTime__content__header">
+					<span class="cartTime__content__header--title">Self Care</span>
+					<span class="cartTime__content__header--star">
+						<img src="./images/icon-ellipsis.svg" alt="">
+					</span>
+				</div>
+				<div class="cartTime__content__main">
+					<span class="cartTime__content__main--time " id="selfCareHours"></span>
+					<span class="cartTime__content__main--date " id="selfCarePrevHours"></span>
+				</div>
+			</div>
+		</div>
 
-	
+	</main>
+
 	<div class="attribution">
 		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-		Coded by <a href="#">Your Name Here</a>.
+		Coded by <a href="#">Jules Cynamon</a>.
 	</div>
+
+	<script src="./script/index.js"></script>
 </body>
 </html>

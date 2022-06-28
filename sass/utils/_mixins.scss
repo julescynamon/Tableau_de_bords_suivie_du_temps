@@ -20,9 +20,6 @@
     align-items: center;
 }
 
-@mixin flex-fill {
-    flex: 1 1 auto;
-}
 
 /* padding */
 
@@ -94,6 +91,11 @@
 
 // cart
 
-@mixin cart-titles {
-    font-size: 18px;
+@mixin choice {
+    color: #f1f1f179;
+    font-size: 15px;
+    cursor: pointer;
+    &:hover {
+        color: $white;
+    }
 }

@@ -20,5 +20,11 @@ html {
 
 body {
     @include font;
-    background-color: $darkBlue;
+    background-color: $veryDarkBlue;
+}
+
+button {
+    cursor: pointer;
+    color: $white;
+    background-color: transparent;
 }
